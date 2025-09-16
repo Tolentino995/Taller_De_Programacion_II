@@ -7,15 +7,21 @@
     <title>T.P. N°1</title>
 </head>
 <body>
-    <h2>Registro de Estudiantes</h2>
+    <!-- <h2>Registro de Estudiantes</h2> -->
 
-  <label for="curso">Nombre del curso:</label>
+  <!-- <label for="curso">Nombre del curso:</label>
   <input type="text" id="curso" placeholder="Ej: Matemáticas">
   <br><br>
   <label for="cantidad">Cantidad de estudiantes:</label>
   <input type="number" id="cantidad" placeholder="Ej: 25">
   <br><br>
-  <button id="validarBtn">Validar</button>
+  <button id="validarBtn">Validar</button> -->
+
+  <form method="POST" id="materiaForm">
+      <label for="nombreMateria">Ingrese el nombre de la materia:</label>
+      <input type="text" id="nombreMateria" name="nombreMateria">
+      <button>Enviar</button>
+  </form>
 
   <p id="mensaje"></p>
 
