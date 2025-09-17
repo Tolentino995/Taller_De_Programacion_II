@@ -1,37 +1,37 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-    <title>T.P. N°1</title>
+    <title>T.P. N°1 - Conceptos</title>
 </head>
 <body>
 
     <main class="container">
-        <h2>Registro de Conceptos de la Materia</h2>
+        <h2 class="titulo-principal">Registro de Conceptos de la Materia</h2>
 
-        <form id="formularioConceptos">
+        <form id="formularioConceptos" class="formulario">
             <div class="form-group">
                 <label for="nombreConcepto">Nombre del concepto:</label>
-                <input type="text" id="nombreConcepto" name="nombreConcepto" required>
+                <input type="text" id="nombreConcepto" name="nombreConcepto" required class="input-field">
             </div>
             
             <div class="form-group">
                 <label for="desarrolloConcepto">Desarrollo del concepto:</label>
-                <textarea id="desarrolloConcepto" name="desarrolloConcepto" rows="5" required></textarea>
+                <textarea id="desarrolloConcepto" name="desarrolloConcepto" rows="5" required class="input-field"></textarea>
             </div>
             
-            <button type="submit">Guardar concepto</button>
+            <button type="submit" class="btn-guardar">Guardar concepto</button>
         </form>
 
-        <hr>
+        <hr class="divider">
 
-        <h3>Conceptos registrados</h3>
-        <div id="listaConceptos">
+        <h3 class="titulo-secundario">Conceptos registrados</h3>
+        <div id="listaConceptos" class="lista-conceptos">
             </div>
     </main>
 
-  <script src="script.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>

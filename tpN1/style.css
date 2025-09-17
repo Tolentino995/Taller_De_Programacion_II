@@ -1,0 +1,126 @@
+/* Fuende de  Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+/* Paleta de colores y fuentes */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f4f7f6; /* A very light gray/off-white */
+    color: #333; /* Dark gray for text */
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+}
+
+/* Contenedor del main*/
+.container {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 700px;
+}
+
+/* Headings */
+.titulo-principal {
+    color: #007bff; /* A nice blue color */
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.titulo-secundario {
+    color: #555;
+    border-bottom: 2px solid #eee;
+    padding-bottom: 10px;
+    margin-top: 25px;
+}
+
+/* Form styles */
+.formulario {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group label {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.input-field {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box; /* Ensures padding doesn't affect the width */
+    font-size: 16px;
+    transition: border-color 0.3s;
+}
+
+.input-field:focus {
+    border-color: #007bff;
+    outline: none; /* Removes the default outline */
+}
+
+textarea.input-field {
+    resize: vertical; /* Allows the user to resize vertically */
+}
+
+/* Estilo del boton */
+.btn-guardar {
+    background-color: #007bff;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.btn-guardar:hover {
+    background-color: #0056b3;
+}
+
+/* Linea para dividir*/
+.divider {
+    border: 0;
+    height: 1px;
+    background-color: #ddd;
+    margin: 30px 0;
+}
+
+/* Styles for the concepts list, to be added by JavaScript */
+.lista-conceptos {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* Example of a concept item that you would create with JavaScript */
+.concepto-item {
+    background-color: #f9f9f9;
+    padding: 15px;
+    border: 1px solid #eee;
+    border-left: 5px solid #007bff;
+    border-radius: 5px;
+}
+
+.concepto-item h4 {
+    margin: 0 0 5px 0;
+    color: #007bff;
+}
+
+.concepto-item p {
+    margin: 0;
+    line-height: 1.5;
+}
