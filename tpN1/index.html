@@ -7,23 +7,30 @@
     <title>T.P. N°1</title>
 </head>
 <body>
-    <!-- <h2>Registro de Estudiantes</h2> -->
 
-  <!-- <label for="curso">Nombre del curso:</label>
-  <input type="text" id="curso" placeholder="Ej: Matemáticas">
-  <br><br>
-  <label for="cantidad">Cantidad de estudiantes:</label>
-  <input type="number" id="cantidad" placeholder="Ej: 25">
-  <br><br>
-  <button id="validarBtn">Validar</button> -->
+    <main class="container">
+        <h2>Registro de Conceptos de la Materia</h2>
 
-  <form method="POST" id="materiaForm">
-      <label for="nombreMateria">Ingrese el nombre de la materia:</label>
-      <input type="text" id="nombreMateria" name="nombreMateria">
-      <button>Enviar</button>
-  </form>
+        <form id="formularioConceptos">
+            <div class="form-group">
+                <label for="nombreConcepto">Nombre del concepto:</label>
+                <input type="text" id="nombreConcepto" name="nombreConcepto" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="desarrolloConcepto">Desarrollo del concepto:</label>
+                <textarea id="desarrolloConcepto" name="desarrolloConcepto" rows="5" required></textarea>
+            </div>
+            
+            <button type="submit">Guardar concepto</button>
+        </form>
 
-  <p id="mensaje"></p>
+        <hr>
+
+        <h3>Conceptos registrados</h3>
+        <div id="listaConceptos">
+            </div>
+    </main>
 
   <script src="script.js"></script>
 </body>
